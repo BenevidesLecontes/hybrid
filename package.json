@@ -1,0 +1,58 @@
+{
+  "name": "ng-hybrid-pinterest",
+  "version": "0.0.1",
+  "description": "toy pinterest clone in ng1/ng2 hybrid",
+  "contributors": [
+    "Nate Murray <nate@fullstack.io>",
+    "Felipe Coury <felipe@ng-book.com>"
+  ],
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rm -f ts/*.js ts/*.js.map ts/components/*.js ts/components/*.js.map ts/services/*.js ts/services.js.map",
+    "tsc": "./node_modules/.bin/tsc",
+    "tsc:w": "./node_modules/.bin/tsc -w",
+    "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
+    "e2e:serve": "npm run tsc && ./node_modules/.bin/live-server --host=localhost --port=8080 --no-browser .",
+    "go": "concurrent \"npm run tsc:w\" \"npm run serve\" "
+  },
+  "dependencies": {
+    "@angular/animations": "4.0.0",
+    "@angular/common": "4.0.0",
+    "@angular/compiler": "4.0.0",
+    "@angular/compiler-cli": "4.0.0",
+    "@angular/core": "4.0.0",
+    "@angular/forms": "4.0.0",
+    "@angular/http": "4.0.0",
+    "@angular/platform-browser": "4.0.0",
+    "@angular/platform-browser-dynamic": "4.0.0",
+    "@angular/router": "4.0.0",
+    "@angular/upgrade": "4.0.0",
+    "@uirouter/angular": "git://github.com/ui-router/angular.git#1.0.0-beta.6-hybrid-2.0.0-4",
+    "@uirouter/angular-hybrid": "^3.0.1",
+    "@uirouter/rx": "^0.4.1",
+    "angular": "1.6.4",
+    "core-js": "2.4.1",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.9",
+    "rxjs": "^5.4.0",
+    "systemjs": "0.19.46",
+    "ts-helpers": "1.1.1",
+    "tslint": "~4.5.1",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.2.30",
+    "@types/node": "6.0.42",
+    "concurrently": "1.0.0",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "0.12.22",
+    "karma-chrome-launcher": "0.1.4",
+    "karma-jasmine": "0.1.5",
+    "live-server": "0.9.0",
+    "protractor": "4.0.14",
+    "ts-node": "1.2.1",
+    "typescript": "^2.3.2",
+    "@angular/compiler-cli": "4.0.0"
+  }
+}
