@@ -64,7 +64,8 @@ angular.module('interestApp')
         UIRouterUpgradeModule,
         UpgradeModule,
     ],
-    providers: [
+    entryComponents: [PinControlsComponent],
+    providers: [AnalyticsService,
         {provide: 'PinsService', deps: ['$injector'], useFactory: getPinsService},
         {provide: '$state', deps: ['$injector'], useFactory: getUiRouterState},
     ]

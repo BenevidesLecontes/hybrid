@@ -6,10 +6,10 @@
         'rxjs': 'node_modules/rxjs',
         '@angular': 'node_modules/@angular',
         '@angular/upgrade/static': 'node_modules/@angular/upgrade/bundles/upgrade-static.umd.js',
-        'angular': 'node_modules/angular/angular.js',
+        'angular': 'js/vendor/angular-shim.js',
         'interestAppNg1': 'js/app.js',
         "@uirouter/angular": "node_modules/@uirouter/angular/_bundles/ui-router-ng2.js",
-        '@uirouter/angularjs': "node_modules/@uirouter/angularjs/release/angular-ui-router.js",
+        '@uirouter/angularjs': "node_modules/@uirouter/angularjs/release/ui-router-angularjs.js",
         '@uirouter/angular-hybrid': "node_modules/@uirouter/angular-hybrid/_bundles/ui-router-angular-hybrid.js",
         '@uirouter/core': "node_modules/@uirouter/core/_bundles/ui-router-core.js",
         '@uirouter/rx': "node_modules/@uirouter/rx/_bundles/ui-router-rx.js",
@@ -46,12 +46,6 @@
         map: map,
         packages: packages,
         meta: {
-            'angular': {
-                format: 'global', exports: 'angular'
-            },
-            'angular-ui-router': {
-                globals: {angular: 'angular'}
-            },
             'ng-selectize': {format: 'cjs'}
         }
     }
