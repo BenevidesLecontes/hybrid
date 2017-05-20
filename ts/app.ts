@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {Injector, NgModule} from "@angular/core";
+import {CUSTOM_ELEMENTS_SCHEMA, Injector, NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
@@ -18,6 +18,7 @@ import {AnalyticsService} from "./services/AnalyticsService";
 import {downgradeComponent, downgradeInjectable, UpgradeModule} from "@angular/upgrade/static";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import {UIRouterUpgradeModule} from "@uirouter/angular-hybrid";
+import {HelloModule} from './example/hello.module';
 
 declare const angular: any;
 
@@ -25,10 +26,10 @@ declare const angular: any;
  * Create our upgradeAdapter
  */
 export function getPinsService($injector) {
-    $injector.get('wiAuthenticationService');
+    $injector.get('PinsService');
 }
 export function getUiRouterState($injector) {
-    $injector.get('wiAuthenticationService');
+    $injector.get('$state');
 }
 
 /*
@@ -63,12 +64,14 @@ angular.module('interestApp')
         FormsModule,
         UIRouterUpgradeModule,
         UpgradeModule,
+        HelloModule
     ],
-    entryComponents: [PinControlsComponent],
+    entryComponents: [PinControlsComponent, AddPinComponent],
     providers: [AnalyticsService,
         {provide: 'PinsService', deps: ['$injector'], useFactory: getPinsService},
         {provide: '$state', deps: ['$injector'], useFactory: getUiRouterState},
-    ]
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class InterestAppModule {
     ngDoBootstrap() { /* no body */

@@ -4,7 +4,7 @@ module.exports = angular.module('interestApp', ['ui.router', 'ui.router.upgrade'
 
   this.pins = function() {
     var self = this;
-    if(self._pins == null) { 
+    if(self._pins == null) {
       // initialize with sample data
       return $http.get("/js/data/sample-data.json").then(
         function(response) {
@@ -44,7 +44,7 @@ module.exports = angular.module('interestApp', ['ui.router', 'ui.router.upgrade'
           return PinsService.pins();
         }
       }
-    })
+    });
  
     $urlRouterProvider.when('', '/') ;
 })
@@ -75,7 +75,7 @@ module.exports = angular.module('interestApp', ['ui.router', 'ui.router.upgrade'
       }
     }
   }
-})
+});
 
 
-//  
+//
