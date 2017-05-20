@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>{{ wellcome }}</h1>
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-13 col-xs-16">
+                <div class="form-group">
+                    <label for="nome" class="label-invalid-required">Nome</label>
+                    <input
+                            class="form-control input-layout"
+                            id="nome"
+                            [formControl]="form.get('nome')"/>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngFor="let item of form.controls.telefones.controls; let i = index">
+            <div formArrayName="telefones">
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="form-group">
+                                <label>DDD</label>
+                                <input
+                                        type="tel"
+                                        class="form-control input-layout"
+                                        id="ddd_{{i}}"
+                                        maxlength="2"
+                                        [formControl]="item.controls.ddd"/>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group">
+                                <label>Telefone</label>
+                                <input
+                                        type="tel"
+                                        class="form-control input-layout"
+                                        maxlength="10"
+                                        [formControl]="item.controls.numero"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <button class="btn btn-primary btn-md" (click)="addTelefone()">ADD Telephone</button>
+</div>

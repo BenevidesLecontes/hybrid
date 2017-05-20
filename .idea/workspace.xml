@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ea44da0-d5c1-45d3-a0df-2909b2c654e1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/hello.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ts/example/hello.app.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ts/example/hello.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ts/example/hello.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ts/app.ts" afterPath="$PROJECT_DIR$/ts/app.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -106,8 +107,8 @@
       <file leaf-file-name="hello.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/hello.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="45" column="80" lean-forward="false" selection-start-line="45" selection-start-column="80" selection-end-line="45" selection-end-column="80" />
+            <state relative-caret-position="140">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="n#form#0;n#div#0;n#!!top" expanded="false" />
               </folding>
@@ -231,12 +232,6 @@
             <path>
               <item name="hybrid" type="b2602c69:ProjectViewProjectNode" />
               <item name="hybrid" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hybrid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hybrid" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,7 +331,7 @@
       <workItem from="1495113456912" duration="5292000" />
       <workItem from="1495229227225" duration="747000" />
       <workItem from="1495235227263" duration="962000" />
-      <workItem from="1495236736599" duration="1286000" />
+      <workItem from="1495236736599" duration="1717000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1495056164330</created>
@@ -352,11 +347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495104333076</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hello Module.">
+      <created>1495299222809</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495299222810</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16975000" />
+    <option name="totallyTimeSpent" value="17406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
@@ -408,9 +410,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="fix errors with uiRouter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix errors with uiRouter" />
+    <MESSAGE value="Hello Module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hello Module." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -819,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="45" column="80" lean-forward="false" selection-start-line="45" selection-start-column="80" selection-end-line="45" selection-end-column="80" />
+        <state relative-caret-position="140">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="n#form#0;n#div#0;n#!!top" expanded="false" />
           </folding>
